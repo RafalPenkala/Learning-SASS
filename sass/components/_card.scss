@@ -2,27 +2,41 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;  
+  height: 40rem;  
 
 
   &__side {
-    background-color: orangered;
-    height: 50rem;
-    transition: all .8s;
+    height: 40rem;
+    transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem ($color-black, .15);
 
     &--front {
-    background-color: orangered;
-      
+      background-color: $color-white;
     }
 
     &--back {
-      background-color: rgb(30, 255, 0);
-      transform: rotateY(180deg);
+       transform: rotateY(180deg);
+
+       &-orange {
+        background-image: linear-gradient(
+          to right bottom, $color-secondary-light, $color-secondary-dark);
+       }
+
+       &-green {
+        background-image: linear-gradient(
+          to right bottom, $color-primary-light, $color-primary-dark);
+       }
+
+       &-blue {
+        background-image: linear-gradient(
+          to right bottom, $color-tertiary-light, $color-tertiary-dark);
+       }
     }
   }
 

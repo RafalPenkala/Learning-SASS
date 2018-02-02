@@ -180,21 +180,27 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 40rem; }
   .card__side {
-    background-color: orangered;
-    height: 50rem;
-    transition: all .8s;
+    height: 40rem;
+    transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem #000, 0.15; }
     .card__side--front {
-      background-color: orangered; }
+      background-color: #fff; }
     .card__side--back {
-      background-color: #1eff00;
       transform: rotateY(180deg); }
+      .card__side--back-orange {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-green {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-blue {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
