@@ -22,11 +22,17 @@
 }
 
 .section-tours {
-  padding: 25rem 0;
+  padding: 15rem 0;
   background-color: $color-grey-light-1;
 
   transform: skewY(-7deg);
 
   & > * {transform: skewY(7deg);
 }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: $color-grey-light-1;
+
+  }
 }
