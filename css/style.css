@@ -189,9 +189,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 40rem;
-  width: 30rem;
-  text-align: center; }
+  height: 40rem; }
   .card__side {
     height: 40rem;
     transition: all .8s ease;
