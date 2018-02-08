@@ -1,0 +1,43 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+
+  &__logo-box {
+    margin-bottom: 8rem;
+
+  }
+
+  &__logo {
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  &__navigation {
+
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+  }
+
+  &__link {
+     
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+      text-decoration: none;
+    }
+  }
+}
