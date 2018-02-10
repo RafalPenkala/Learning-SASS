@@ -22,6 +22,8 @@ breakpoint argument choices:
 - big-desktop
 */
 
+// General order: Base + typography > general layout + grid > page layout > components 
+
 // 1em = 16px; in media Query always use em's
 
 @mixin respond($breakpoint) {
