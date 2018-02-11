@@ -589,7 +589,7 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1500;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   opacity: 0;
@@ -740,8 +740,14 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     height: 10rem;
     display: block;
@@ -796,6 +802,9 @@ body {
   padding: 25rem 0;
   margin-top: -30vh;
   margin-bottom: -10vh; }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -805,19 +814,31 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+  @media only screen and (max-width: 56.25em) {
+    .section-features {
+      padding: 15rem 0; } }
 
 .section-tours {
-  padding: 15rem 0;
+  padding: 25rem 0 15rem 0;
   background-color: #f7f7f7;
   margin-top: -10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-tours {
+      padding: 20rem 0 10rem 0; } }
 
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  @media only screen and (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
